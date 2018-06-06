@@ -1,0 +1,3 @@
+Names = ["Isis","Natalia", "Charlie",]
+for name in Names:
+  if name == "Isis": print("my name is " + name)
