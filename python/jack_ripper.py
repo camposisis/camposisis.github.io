@@ -1,10 +1,15 @@
 import csv
 with open('jack_ripper.csv', 'r') as csvfile:
-    first_col = csv.reader(csvfile)
-    first_part = [row for row in first_col]
+    jack = csv.reader(csvfile)
+    first_part = [row for row in jack]
 
 print(first_part[0])
 
-with open('jack_ripper.csv', 'w') as (meat):
-    csvwriter = csv.writer(meat)
+with open('jack_ripper.csv', 'r') as csvfile:
+    jack = csv.reader(csvfile)
+    all_texts = [row for row in jack]
+
+print(all_texts)
+
+for row in jack:
     
